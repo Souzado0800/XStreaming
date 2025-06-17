@@ -14,9 +14,9 @@ REM Substitua a URL abaixo pela do seu repositório
 git remote add origin https://github.com/Souzado0800/XStreaming.git
 
 REM Define o branch principal como main
-git branch -M main
+git branch -M master
 
 REM Envia para o GitHub
-git push -u origin main
+git push -u origin master
 
 pause
