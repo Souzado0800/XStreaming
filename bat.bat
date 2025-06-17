@@ -1,22 +1,27 @@
 @echo off
 cd /d "%~dp0"
 
-REM Inicializa o repositório
+REM Configurar nome e email (faça isso uma vez, depois pode remover)
+git config --global user.name "souzado0800"
+git config --global user.email "matheushopi.tw@gmail.com"
+
+REM Inicializar git (ignora se já existir)
 git init
 
-REM Adiciona todos os arquivos
-git add .
+REM Trocar para o branch master
+git checkout -B master
 
-REM Commit inicial
-git commit -m "Commit inicial - projeto XStreaming"
+REM (Opcional) Remover origin se já existir
+git remote remove origin 2>nul
 
-REM Substitua a URL abaixo pela do seu repositório
+REM Adicionar o repositório remoto
 git remote add origin https://github.com/Souzado0800/XStreaming.git
 
-REM Define o branch principal como master
-git branch -M master
+REM Adicionar todos os arquivos e comitar
+git add .
+git commit -m "Commit inicial - projeto XStreaming"
 
-REM Envia para o GitHub
-git push -u origin master
+REM Forçar push para master
+git push origin master --force
 
 pause
