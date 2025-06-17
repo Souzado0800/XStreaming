@@ -1,0 +1,22 @@
+@echo off
+cd /d "%~dp0"
+
+REM Inicializa o repositório
+git init
+
+REM Adiciona todos os arquivos
+git add .
+
+REM Commit inicial
+git commit -m "Commit inicial - projeto XStreaming"
+
+REM Substitua a URL abaixo pela do seu repositório
+git remote add origin https://github.com/Souzado0800/XStreaming.git
+
+REM Define o branch principal como main
+git branch -M main
+
+REM Envia para o GitHub
+git push -u origin main
+
+pause

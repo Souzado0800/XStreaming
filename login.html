@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login - XStreaming</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>XStreaming</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="register.html">Registrar</a>
+    </nav>
+  </header>
+
+  <main class="centered">
+    <h2>Login</h2>
+    <form onsubmit="event.preventDefault(); alert('Login simulado com sucesso!'); window.location.href='dashboard.html';">
+      <input type="text" placeholder="Usuário" required />
+      <input type="password" placeholder="Senha" required />
+      <button type="submit">Entrar</button>
+    </form>
+  </main>
+</body>
+</html>
