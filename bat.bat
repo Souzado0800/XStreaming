@@ -21,6 +21,9 @@ git commit -m "Commit inicial do projeto XStreaming"
 REM CRIA O BRANCH MAIN (CASO NÃO EXISTA)
 git branch -M main
 
+FORÇA CRIA
+git push origin main --force
+
 REM FAZ O PUSH
 git push -u origin main
 
