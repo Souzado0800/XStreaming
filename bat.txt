@@ -13,7 +13,7 @@ git commit -m "Commit inicial - projeto XStreaming"
 REM Substitua a URL abaixo pela do seu repositório
 git remote add origin https://github.com/Souzado0800/XStreaming.git
 
-REM Define o branch principal como main
+REM Define o branch principal como master
 git branch -M master
 
 REM Envia para o GitHub
